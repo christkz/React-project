@@ -1,0 +1,28 @@
+.navigation{
+
+    margin: 26px 0;
+    display: flex;
+
+    a{
+        margin: 5px;
+        padding: 5px;
+        position: relative;
+        text-decoration: none;
+        color: black;
+        cursor:pointer ;
+    }
+    .nav-active{
+        &::after{
+            content: "";
+            width: 55px;
+            height: 5px;
+            background:aqua;
+            position: absolute;
+            bottom: 1px;
+            left: 3px;
+            transform: translateX(-20);
+        }
+    }
+
+}
+
